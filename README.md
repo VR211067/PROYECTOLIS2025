@@ -1,8 +1,8 @@
 # PROYECTOLIS2025
 # Integrantes:
 - *Némesis Alejandra Valencia Rivera VR211067*
-- *Geovany Arturo Pineda Fuentes
-  PF211251*
+- *Geovany Arturo Pineda Fuentes PF211251*
+- *Alexandra Guadalupe Padilla Ramírez NR221019*
 
 
 # Trello
