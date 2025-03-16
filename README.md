@@ -3,6 +3,7 @@
 - *Némesis Alejandra Valencia Rivera VR211067*
 - *Geovany Arturo Pineda Fuentes PF211251*
 - *Alexandra Guadalupe Padilla Ramírez NR221019*
+- *Luis Antonio Méndez Parada MP220885*
 
 
 # Trello
