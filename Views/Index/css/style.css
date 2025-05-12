@@ -1,0 +1,231 @@
+
+:root {
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos para el header */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.navbar-dark .navbar-nav .btn-outline-light {
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+
+.navbar-elegante {
+    background: linear-gradient(135deg, #fa2929 , #940303); 
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.568);
+    position: relative;
+    z-index: 1030;
+}
+
+
+.navbar-elegante::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: radial-gradient(ellipse at center, rgba(255, 158, 94, 0.623), rgba(231, 222, 222, 0.473));
+    box-shadow: 0 0 12px rgba(204, 47, 47, 0.979);
+    filter: blur(4px);
+    z-index: 1020;
+}
+
+
+.navbar-elegante .navbar-brand,
+.navbar-elegante .nav-link,
+.navbar-elegante .btn-outline-light {
+    color: rgba(252, 240, 240, 0.904);
+}
+
+.navbar-elegante .nav-link:hover,
+.navbar-elegante .nav-link.active {
+    color: #f58a82;
+    transform: translateY(-2px);
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--bs-dark);
+    color: white;
+    padding: 3rem 0 1.5rem;
+    margin-top: auto; /* Esto asegura que el footer siempre esté abajo */
+}
+
+footer h5 {
+    color: var(--bs-danger);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    color: white;
+    background-color: var(--bs-danger);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+
+.tooltip {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section-small {
+    background: url('https://i.pinimg.com/originals/4a/15/ed/4a15edb35cf850aadc8d2bab08b2d313.gif') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-section-small::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22, 16, 16, 0.767); 
+    z-index: 1;
+}
+
+.hero-section-small .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    
+    .navbar-dark .navbar-nav .btn-outline-light {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767.98px) {
+    footer .col-md-4 {
+        margin-bottom: 2rem;
+    }
+    
+    footer .text-center {
+        text-align: left !important;
+    }
+}

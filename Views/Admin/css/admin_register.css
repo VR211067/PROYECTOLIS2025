@@ -1,0 +1,127 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenido principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding-top: 120px;
+    padding-bottom: 40px;
+    flex-direction: column; 
+}
+
+/* Estilo para el título fuera del formulario */
+.titulo-registro {
+    text-align: center;
+    color: #b00020; 
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+}
+
+/* Contenedor del formulario con borde rojo */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #b00020; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Estilo de los inputs y select */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón rojo */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b00020;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo de los mensajes de error y éxito */
+.error-message,
+.success-message {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: #388e3c;
+}
+
+/* Navbar elegante */
+.navbar-elegante {
+    background: linear-gradient(135deg, #fa2929, #940303); 
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.568); 
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1030; 
+    padding: 10px 0; 
+}
+
+.navbar-elegante .navbar-brand,
+.navbar-elegante .nav-link,
+.navbar-elegante .btn-outline-light {
+    color: rgba(255, 255, 255, 0.95); 
+}
+
+.navbar-elegante .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-elegante .nav-link {
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.navbar-elegante .nav-link:hover,
+.navbar-elegante .nav-link.active {
+    color: #f58a82; 
+    transform: translateY(-2px); 
+}
+
+/* Estilo para el botón del login */
+.navbar-elegante .btn-outline-light {
+    border-color: white; 
+    color: white; 
+}
+
+.navbar-elegante .btn-outline-light:hover {
+    background-color: white; 
+    color: #940303; 
+}
+
+

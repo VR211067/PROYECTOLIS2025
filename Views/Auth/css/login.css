@@ -1,0 +1,177 @@
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #b00020;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); 
+    padding: 20px;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #fff;
+    border: 2px solid #b00020;
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.login-container h2 {
+    color: #b00020;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón principal */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b00020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #d32f2f;
+}
+
+/* Texto debajo del formulario */
+.login-container p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/* Enlaces */
+.login-container a {
+    color: #b00020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen de login con Google */
+.login-container img {
+    margin-top: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #d32f2f;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Estilos para el header */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.navbar-dark .navbar-nav .btn-outline-light {
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+
+.navbar-elegante {
+    background: linear-gradient(135deg, #fa2929 , #940303); 
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.568);
+    position: relative;
+    z-index: 1030;
+}
+
+
+.navbar-elegante::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: radial-gradient(ellipse at center, rgba(255, 158, 94, 0.623), rgba(231, 222, 222, 0.473));
+    box-shadow: 0 0 12px rgba(204, 47, 47, 0.979);
+    filter: blur(4px);
+    z-index: 1020;
+}
+
+
+.navbar-elegante .navbar-brand,
+.navbar-elegante .nav-link,
+.navbar-elegante .btn-outline-light {
+    color: rgba(252, 240, 240, 0.904);
+}
+
+.navbar-elegante .nav-link:hover,
+.navbar-elegante .nav-link.active {
+    color: #f58a82;
+    transform: translateY(-2px);
+}

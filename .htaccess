@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /Red_Donantes/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)$ index.php [QSA,L]
+</IfModule>
+
+# Permitir métodos PUT y DELETE
+<LimitExcept GET POST PUT DELETE>
+  Deny from all
+</LimitExcept>
+
+# Opcional: permitir CORS si vas a usar JavaScript para llamar a la API
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+  Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>

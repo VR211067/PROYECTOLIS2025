@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+/* Navbar con título (tomado de agregar.css) */
+.navbar-donantes {
+    background: linear-gradient(135deg, #fa2929, #940303);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.568);
+    padding: 15px 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1030;
+    text-align: center;
+}
+
+.navbar-donantes h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    margin-top: 120px; /* Alineación correcta debido al navbar */
+    padding: 20px;
+}
+
+/* Mejoras en el estilo del botón PDF */
+.btn-pdf {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #b00020; /* Rojo similar al navbar */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-pdf:hover {
+    background-color: #d32f2f;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Efecto sutil al pasar el ratón */
+}
+
+/* Estilo de la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.table thead {
+    background-color: #b00020; /* Rojo para la cabecera */
+    color: white;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #b00020;
+    color: white;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlace de "Volver" */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #b00020;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.back-link:hover {
+    color: #d32f2f;
+    text-decoration: underline;
+}

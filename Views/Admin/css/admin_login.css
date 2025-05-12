@@ -1,0 +1,97 @@
+/* Fondo y fuente general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #b00020;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Contenido principal ajustado para navbar fijo */
+.main-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 120px 20px 20px; 
+    background-color: #fff;
+}
+
+/* Título fuera del contenedor y encima del formulario */
+.login-header {
+    text-align: center;
+    color: #b00020;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del registro */
+.register-container {
+    background-color: #fff;
+    border: 2px solid #b00020;
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada */
+.register-container input[type="text"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón de registro */
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b00020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #d32f2f;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #d32f2f;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* Estilos para el header */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+/* NAVBAR ELEGANTE */
+.navbar-elegante {
+    background: linear-gradient(135deg, #fa2929 , #940303); 
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.568);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-elegante .navbar-brand,
+.navbar-elegante .nav-link,
+.navbar-elegante .btn-outline-light {
+    color: rgba(255, 255, 255, 0.95); 
+}
